@@ -12,7 +12,41 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$firestarter-demo-primary: mat-palette($mat-indigo);
+
+$custom-mint: (
+    50 : #e1faf5,
+    100 : #b4f3e7,
+    200 : #82ebd7,
+    300 : #4fe2c7,
+    400 : #2adcbb,
+    500 : #04d6af,
+    600 : #03d1a8,
+    700 : #03cc9f,
+    800 : #02c696,
+    900 : #01bc86,
+    A100 : #e5fff6,
+    A200 : #b2ffe5,
+    A400 : #7fffd5,
+    A700 : #65ffcc,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$firestarter-demo-primary: mat-palette($custom-mint);
 $firestarter-demo-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
