@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "firestarter-demo"
+    }
+  },
+  "defaultProject": "firestarter-demo",
+  "cli": {
+    "analytics": "99d1c693-b144-4a86-b797-4fd04b02c742"
+  }
 }
