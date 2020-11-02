@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-firestarter-bcaee": {
+      "hosting": {
+        "firestarter-demo": [
+          "angular-firestarter-bcaee"
+        ]
+      }
+    }
+  }
+}
