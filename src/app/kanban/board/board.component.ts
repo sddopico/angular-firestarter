@@ -39,7 +39,7 @@ export class BoardComponent {
           ]);
         } else {
           const update = this.board.tasks;
-          update.splice(result.ix, 1, result.task);
+          update.splice(result.idx, 1, result.task);
           this.boardService.updateTasks(this.board.id, this.board.tasks);
         }
       }
