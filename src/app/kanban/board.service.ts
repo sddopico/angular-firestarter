@@ -16,10 +16,10 @@ export class BoardService {
    * Creates a new board for the current User
    */
   // tslint:disable-next-line: typedef
-  async createBoard() {
+  async createBoard(data: Board) {
     const user = await this.afAuth.currentUser;
     return this.db.collection('boards').add({
-      ...DataCue,
+      ...data,
       uid: user.uid,
       tasks: [{ description: 'Hello!', label: 'yellow' }]
     });
