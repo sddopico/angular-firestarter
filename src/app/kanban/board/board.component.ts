@@ -46,4 +46,9 @@ export class BoardComponent {
     });
   }
 
+  // tslint:disable-next-line: typedef
+  handleDelete() {
+    this.boardService.deleteBoard(this.board.id);
+  }
+
 }
