@@ -12,6 +12,7 @@ export class BoardComponent {
 
   constructor(private boardService: BoardService) { }
 
+  // tslint:disable-next-line: typedef
   taskDrop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.board.tasks, event.previousIndex, event.currentIndex);
     this.boardService.updateTasks(this.board.id, this.board.tasks);
