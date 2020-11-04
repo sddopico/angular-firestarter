@@ -19,7 +19,7 @@
   >
     <div
       class="inner-card"
-      cdkDragHandle
+      cdkDrag
       *ngFor="let task of board.tasks; let i = index"
       (click)="openDialog(task, i)"
     >
